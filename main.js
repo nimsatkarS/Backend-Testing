@@ -1,6 +1,5 @@
 /****************** NEW ROUT  *************************/
-
-  const express = require('express');
+const express = require('express');
 const { Client, Pool } = require('pg');
 const ejs = require('ejs');
 
@@ -112,5 +111,4 @@ client.query(deleteQuery, [id])
   if (err) console.error(err);
   else console.log('Server running on port 5000');
 });
-
 
